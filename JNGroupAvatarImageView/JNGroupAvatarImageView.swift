@@ -174,6 +174,9 @@ open class JNGroupAvatarImageView : UIView {
                     avatarView.setup(image : image , placeHolderImage: placeHolderImage, fullName: avatar.getGroupAvatarDisplayName(),showInitails : showInitails)
                 } else {
                     avatarView.setup(imageUrl : avatarImageURL , placeHolderImage: placeHolderImage, fullName: avatar.getGroupAvatarDisplayName(),showInitails : showInitails)
+                    if let avatarBackgroundColor = avatar.getGroupAvatarColor() {
+                        avatarView.backgroundColor = avatarBackgroundColor
+                    }
                 }
                 
                 // Add as subview

@@ -26,4 +26,11 @@ public protocol JNGroupAvatar {
      - Returns: The UIImage
      */
     func getGroupAvatarImage() -> UIImage?
+    
+    /**
+     Get Avatar background color
+     - Returns: The UIColor
+     */
+    func getGroupAvatarColor() -> UIColor?
+
 }
